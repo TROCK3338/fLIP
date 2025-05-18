@@ -1,4 +1,4 @@
-![fLIP](/FLIP/src/assets/logo.png)
+![fLIP](https://www.creativefabrica.com/wp-content/uploads/2022/07/07/Flip-logotype-logo-design-vector-Graphics-33790549-1.png)
 
 # 🚀 FLIP - Flashcard Viewer
 
