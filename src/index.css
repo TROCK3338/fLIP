@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* .glass-card {
+    backdrop-filter: blur(12px) saturate(120%);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: overlay;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  } */
+  
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
