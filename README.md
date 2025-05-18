@@ -1,8 +1,8 @@
+![fLIP](/FLIP/src/assets/logo.png)
+
 # 🚀 FLIP - Flashcard Viewer
 
-> ✨ Disney-style flashcard viewer with Know/Don’t Know interaction, built with Vite + React + TailwindCSS — now a PWA!
-
-![FLIP Preview](../FLIP/src/assets/logo.png) <!-- Replace with actual screenshot path if available -->
+> ✨ A modern flashcard viewer with Know/Don’t Know interaction buttons
 
 ---
 
