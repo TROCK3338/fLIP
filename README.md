@@ -1,12 +1,72 @@
-# React + Vite
+# 🚀 FLIP - Flashcard Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ✨ Disney-style flashcard viewer with Know/Don’t Know interaction, built with Vite + React + TailwindCSS — now a PWA!
 
-Currently, two official plugins are available:
+![FLIP Preview](../FLIP/src/assets/logo.png) <!-- Replace with actual screenshot path if available -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎴 Beautiful, scrollable glassmorphic flashcards
+- 🔄 Flip animation to reveal answers
+- ✅ "Know" / ❌ "Don't Know" button interactions
+- 📱 Installable as a Progressive Web App (PWA)
+- ⚡ Super-fast load times with Vite
+- 🎨 Built with TailwindCSS for clean, responsive design
+
+---
+
+## 🧠 Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Vite PWA Plugin](https://vite-plugin-pwa.netlify.app/)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/flip-flashcard-viewer.git
+cd flip-flashcard-viewer
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run in Development
+
+```bash
+npm run dev
+```
+
+### 4. Build and Preview Production App
+
+```bash
+npm run build
+npm run preview
+```
+
+## PWA Support
+
+- Install the app from your browser (Chrome/Edge).
+- Works offline after first load.
+- Add it to your home screen like a native app.
+
+## AUTHOR
+
+© 2025 Aman Singhal
+
+## LICENCSE
+
+MIT License - Feel free to use, modify and share!
+
+FLIP THE CARD, 
+PLAY IT SMART!!
