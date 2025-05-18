@@ -3,7 +3,7 @@ import engineer from '../assets/engineer.png';
 import entrepreneur from '../assets/entrepreneur.png';
 import harryPotter from '../assets/harryPotter.png';
 import gk from '../assets/general-Knowledge.png';
-import lawyer from '../assets/lawyer.png';
+import lawyer from '../assets/Lawyer.png';
 
 const characters = [
   {
