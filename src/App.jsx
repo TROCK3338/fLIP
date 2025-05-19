@@ -33,20 +33,21 @@ const App = () => {
   const handleNext = () => hasNext && setSelected(filtered[selectedIdx + 1]);
 
   return (
-    <div 
-      className="fixed inset-0 flex flex-col transition-colors duration-500" 
+    <div
+      className="min-h-screen flex flex-col transition-colors duration-500 overflow-x-hidden"
       style={{ background: bgColor }}
     >
       <Header search={search} setSearch={setSearch} />
-      
+
       {/* Tagline + Description */}
-      <div>
-        <h1 className="text-6xl font-bold text-center text-gray-800 mb-4">Flip the card, play it smart.</h1>
-        <div className="text-[#808080] text-center">
-          <span className="block">Discover a fresh way to explore flashcards across all your interests.</span>
-          <span className="block">Effortless, engaging, and designed to make learning feel natural.</span>
-          <span className="block">Give FLIP a moment—see the difference.</span>
-        </div>
+      <div className="w-full flex flex-col items-center px-4 pt-6 sm:pt-12">
+        <h1 className="text-xl sm:text-4xl font-extrabold text-center leading-snug sm:leading-tight">
+          Flip the card, play it smart.
+        </h1>
+
+        <p className="text-sm sm:text-lg text-gray-600 text-center mt-2 sm:mt-4 max-w-2xl">
+          Discover a refreshing way to explore flashcards — effortless, engaging, and designed to make learning feel natural. Whether you're brushing up on topics or diving deep into something new, FLIP makes it simple and smart.
+        </p>
       </div>
 
       <main className="relative flex-1 flex items-center justify-center">
@@ -58,13 +59,13 @@ const App = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 40 }}
               transition={{ type: 'spring', stiffness: 350, damping: 32 }}
-              className="w-full"
+              className="w-full mt-4 sm:mt-10"
             >
               <Carousel characters={filtered} onSelect={setSelected} />
             </motion.div>
           )}
         </AnimatePresence>
-        
+
         <AnimatePresence>
           {selected && (
             <>
@@ -76,7 +77,7 @@ const App = () => {
                 className="fixed inset-0 bg-black z-10"
                 onClick={() => setSelected(null)}
               />
-              
+
               <DetailView
                 character={selected}
                 onClose={() => setSelected(null)}
@@ -89,7 +90,7 @@ const App = () => {
           )}
         </AnimatePresence>
       </main>
-      
+
       <Footer />
     </div>
   );
