@@ -1,5 +1,44 @@
+/* src/styles/global.css */
 
+/* CSS Variables for theming */
+:root {
+  /* Light theme variables */
+  --bg-primary: #ffffff;
+  --bg-secondary: rgba(255, 255, 255, 0.9);
+  --bg-card: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --input-bg: rgba(255, 255, 255, 0.7);
+  --input-focus: #dbeafe;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+}
 
+/* Dark theme variables */
+:root.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: rgba(15, 23, 42, 0.95);
+  --bg-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --input-bg: rgba(30, 41, 59, 0.8);
+  --input-focus: #1e40af;
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+}
+
+/* Base styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar customization */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -9,6 +48,7 @@
   scrollbar-width: none;
 }
 
+/* 3D Transform utilities */
 .perspective-1000 {
   perspective: 1000px;
 }
@@ -23,4 +63,91 @@
 
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+
+/* Theme-aware input styles */
+.theme-input {
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  transition: all 0.15s ease;
+}
+
+.theme-input:focus {
+  outline: none;
+  ring-color: var(--input-focus);
+  background-color: var(--bg-card);
+}
+
+.theme-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Theme-aware card styles */
+.theme-card {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 6px -1px var(--shadow-color);
+}
+
+/* Theme-aware text styles */
+.theme-text-primary {
+  color: var(--text-primary);
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--text-muted);
+}
+
+/* Dark mode specific adjustments */
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color);
+}
+
+.dark .shadow-md {
+  box-shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+}
+
+.dark .shadow-sm {
+  box-shadow: 0 1px 2px 0 var(--shadow-color);
+}
+
+/* Gradient background adjustments for dark mode */
+.dark .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary));
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--input-bg);
+  transform: scale(1.05);
+}
+
+.theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(15deg);
 }
